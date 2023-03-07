@@ -44,20 +44,27 @@ const sidebars = {
 		text: "FABS-API",
 		collapsed: true,
 		items: [
-			{ text: "App", link: "/api/hono" },
-			{ text: "Routing", link: "/api/routing" },
+			{ text: "Overview", link: "/api/overview" },
+			{ text: "Test", link: "/api/test/t" },
 			{ text: "Context", link: "/api/context" },
 			{ text: "HonoRequest", link: "/api/request" },
 			{ text: "Exception", link: "/api/exception" },
+		],
+	},
+	database: {
+		text: "DATABASE",
+		collapsed: true,
+		items: [
+			{ text: "Overview", link: "/database/overview" },
+			{ text: "Workspace", link: "/database/workspace" },
 		],
 	},
 }
 
 export default defineConfig({
 	lang: "en-US",
-	title: "Hono",
-	description:
-		"Ultrafast web framework for Cloudflare Workers, Fastly Compute@Edge, Deno, Bun, Vercel, Lagon, Node.js, and others. Fast, but not only fast.",
+	title: "Fabs",
+	description: "Fantastic auto balance sheets",
 	lastUpdated: true,
 	cleanUrls: "with-subfolders",
 	markdown: {
@@ -77,8 +84,8 @@ export default defineConfig({
 			text: "Edit this page on GitHub",
 		},
 		footer: {
-			message: "Released under the MIT License.",
-			copyright: "Copyright © 2022-present Yusuke Wada & Hono contributors",
+			copyright:
+				"Copyright © 2022-Present Timethunder Co., Ltd. All rights reserved",
 		},
 		sidebar: {
 			"/": [
@@ -86,6 +93,7 @@ export default defineConfig({
 				sidebars["web"],
 				sidebars["backoffice"],
 				sidebars["api"],
+				sidebars["database"],
 			],
 		},
 	},
@@ -94,20 +102,10 @@ export default defineConfig({
 			"meta",
 			{
 				property: "og:image",
-				content: "https://hono.dev/images/hono-title.png",
+				content: "https://pimngob.com/assets/images/pm-logo.png",
 			},
 		],
-		["meta", { property: "og:type", content: "website" }],
-		["meta", { property: "twitter:domain", content: "hono.dev" }],
-		[
-			"meta",
-			{
-				property: "twitter:image",
-				content: "https://hono.dev/images/hono-title.png",
-			},
-		],
-		["meta", { property: "twitter:card", content: "summary_large_image" }],
 		["link", { rel: "shortcut icon", href: "/favicon.ico" }],
 	],
-	titleTemplate: ":title - Hono",
+	titleTemplate: ":title - Fabs",
 })
