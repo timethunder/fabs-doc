@@ -10,27 +10,8 @@ const sidebars = {
 			{ text: "Hono Stacks", link: "/concepts/stacks" },
 		],
 	},
-	gettingStarted: {
-		text: "Getting Started",
-		collapsed: true,
-		items: [
-			{ text: "Basic", link: "/getting-started/basic" },
-			{
-				text: "Cloudflare Workers",
-				link: "/getting-started/cloudflare-workers",
-			},
-			{ text: "Cloudflare Pages", link: "/getting-started/cloudflare-pages" },
-			{ text: "Deno", link: "/getting-started/deno" },
-			{ text: "Bun", link: "/getting-started/bun" },
-			{ text: "Fastly Compute@Edge", link: "/getting-started/fastly" },
-			{ text: "Lagon", link: "/getting-started/lagon" },
-			{ text: "Vercel", link: "/getting-started/vercel" },
-			{ text: "Node.js", link: "/getting-started/nodejs" },
-			{ text: "Others", link: "/getting-started/others" },
-		],
-	},
-	api: {
-		text: "API",
+	sdk: {
+		text: "FABS-SDK",
 		collapsed: true,
 		items: [
 			{ text: "App", link: "/api/hono" },
@@ -40,49 +21,34 @@ const sidebars = {
 			{ text: "Exception", link: "/api/exception" },
 		],
 	},
-	guides: {
-		text: "Guides",
+	web: {
+		text: "FABS-WEB",
 		collapsed: true,
 		items: [
-			{ text: "Middleware", link: "/guides/middleware" },
-			{ text: "Testing", link: "/guides/testing" },
-			{
-				text: "Validation",
-				link: "/guides/validation",
-			},
-			{
-				text: "RPC",
-				link: "/guides/rpc",
-			},
-			{
-				text: "Examples",
-				link: "/guides/examples",
-			},
-			{
-				text: "Miscellaneous",
-				link: "/guides/others",
-			},
+			{ text: "App", link: "/api/hono" },
+			{ text: "Routing", link: "/api/routing" },
+			{ text: "Context", link: "/api/context" },
+			{ text: "HonoRequest", link: "/api/request" },
+			{ text: "Exception", link: "/api/exception" },
 		],
 	},
-	middleware: {
-		text: "Middleware",
+	backoffice: {
+		text: "FABS-BACKOFFICE",
 		collapsed: true,
 		items: [
-			{ text: "Basic Authentication", link: "/middleware/builtin/basic-auth" },
-			{
-				text: "Bearer Authentication",
-				link: "/middleware/builtin/bearer-auth",
-			},
-			{ text: "Cache", link: "/middleware/builtin/cache" },
-			{ text: "Compress", link: "/middleware/builtin/compress" },
-			{ text: "CORS", link: "/middleware/builtin/cors" },
-			{ text: "ETag", link: "/middleware/builtin/etag" },
-			{ text: "html", link: "/middleware/builtin/html" },
-			{ text: "JSX", link: "/middleware/builtin/jsx" },
-			{ text: "JWT", link: "/middleware/builtin/jwt" },
-			{ text: "Logger", link: "/middleware/builtin/logger" },
-			{ text: "Pretty JSON", link: "/middleware/builtin/pretty-json" },
-			{ text: "3rd-party Middleware", link: "/middleware/third-party" },
+			{ text: "User", link: "/api/hono" },
+			{ text: "Order", link: "/api/routing" },
+		],
+	},
+	api: {
+		text: "FABS-API",
+		collapsed: true,
+		items: [
+			{ text: "App", link: "/api/hono" },
+			{ text: "Routing", link: "/api/routing" },
+			{ text: "Context", link: "/api/context" },
+			{ text: "HonoRequest", link: "/api/request" },
+			{ text: "Exception", link: "/api/exception" },
 		],
 	},
 }
@@ -114,20 +80,12 @@ export default defineConfig({
 			message: "Released under the MIT License.",
 			copyright: "Copyright © 2022-present Yusuke Wada & Hono contributors",
 		},
-		nav: [
-			{ text: "Examples", link: "https://github.com/honojs/examples" },
-			{
-				text: "Discussions",
-				link: "https://github.com/orgs/honojs/discussions",
-			},
-		],
 		sidebar: {
 			"/": [
-				sidebars["gettingStarted"],
-				sidebars["concepts"],
+				sidebars["sdk"],
+				sidebars["web"],
+				sidebars["backoffice"],
 				sidebars["api"],
-				sidebars["guides"],
-				sidebars["middleware"],
 			],
 		},
 	},
