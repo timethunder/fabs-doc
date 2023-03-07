@@ -1,0 +1,3 @@
+# CompanyType
+
+CompanyType schema เอาไว้เก็บ ...
