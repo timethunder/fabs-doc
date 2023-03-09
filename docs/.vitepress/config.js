@@ -20,7 +20,7 @@ const sidebars = {
       { text: "🧠 Accounting Concept", link: "/sdk/accounting-concept" },
       { text: "➕ Equation", link: "/sdk/equation" },
       { text: "🗂️ Trial Balance", link: "/sdk/trialbalance" },
-      { text: "📄 Trial Balance Record", link: "/sdk/record" },
+      { text: "📄 Trial Balance Record", link: "/sdk/trialbalance-record" },
       { text: "🚏 Account Types", link: "/sdk/account-type" },
       { text: "✅ Validator", link: "/sdk/validator" },
       { text: "🏭 Data Builder", link: "/sdk/data-builder" },
