@@ -1,5 +1,7 @@
 # Validator
 
+![Sample Validator](./img/validator-1.png)
+
 เป็น class ในการตรวจสอบ `TrialBalance` หรืองบทดลองว่าถูกต้องเป็นไปตามกฎหรือไม่ โดยประกอบด้วย
 
 1. `BalanceValidator` สำหรับตรวจสอบว่าผลรวมของ debit และ credit ในปีเดียวกันต้องเท่ากัน
