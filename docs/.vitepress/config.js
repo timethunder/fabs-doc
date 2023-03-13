@@ -64,6 +64,26 @@ const sidebars = {
       { text: "Exception", link: "/api/exception" },
     ],
   },
+  database: {
+    text: "DATABASE",
+    collapsed: true,
+    items: [
+      { text: "Overview", link: "/database/overview" },
+      { text: "Workspace", link: "/database/workspace" },
+      { text: "Project", link: "/database/project" },
+      { text: "User", link: "/database/user" },
+      { text: "User Role", link: "/database/user-role" },
+      { text: "User Package", link: "/database/user-package" },
+      { text: "Package", link: "/database/package" },
+      { text: "Order Package", link: "/database/order-package" },
+      { text: "Order Payment", link: "/database/order-payment" },
+      { text: "Forgotten Password", link: "/database/forgotten-password" },
+      { text: "Email Verification", link: "/database/email-verification" },
+      { text: "Client", link: "/database/client" },
+      { text: "Business Type", link: "/database/business-type" },
+      { text: "Company Type", link: "/database/company-type" },
+    ],
+  },
 };
 
 export default defineConfig({
@@ -109,6 +129,7 @@ export default defineConfig({
         sidebars["web"],
         sidebars["backoffice"],
         sidebars["api"],
+        sidebars["database"],
       ],
     },
   },
