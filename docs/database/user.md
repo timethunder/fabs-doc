@@ -1,7 +1,5 @@
 # User
 
-User schema เอาไว้เก็บ ...
-
 | Column Name | Data Type | Constraints | Description |
 | --- | --- | --- | --- |
 | id | integer | Primary key | Auto-incrementing identifier for the user |
