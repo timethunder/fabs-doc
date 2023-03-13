@@ -32,6 +32,7 @@ const sidebars = {
       },
       { text: "🧮 Corporate Income Tax", link: "/sdk/cit" },
       { text: "📦 How to use", link: "/sdk/how-to-use" },
+      { text: "⚙️ CI/CD", link: "/sdk/how-to-use" },
     ],
   },
   web: {
