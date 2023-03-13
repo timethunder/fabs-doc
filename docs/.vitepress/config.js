@@ -26,7 +26,7 @@ const sidebars = {
 			{ text: '🏭 Data Builder', link: '/sdk/data-builder' },
 			{
 				text: '💰 Statement Of Financial Position',
-				link: '/sdk/statement-of-finacial',
+				link: '/sdk/sof',
 			},
 			{
 				text: '🥸 Statement of Changes in Equity',
