@@ -24,12 +24,15 @@ const sidebars = {
       { text: "🚏 Account Types", link: "/sdk/account-type" },
       { text: "✅ Validator", link: "/sdk/validator" },
       { text: "🏭 Data Builder", link: "/sdk/data-builder" },
-      { text: "🧩 Remark", link: "/sdk/remark" },
-      { text: "💰 Statement Of Financial", link: "/sdk/statement-of-finacial" },
+      {
+        text: "💰 Statement Of Financial Position",
+        link: "/sdk/statement-of-finacial",
+      },
       {
         text: "🥸 Statement of Changes in Equity",
         link: "/sdk/statement-of-changes-in-equity",
       },
+      { text: "🧩 Remark", link: "/sdk/remark" },
       { text: "🧮 Corporate Income Tax", link: "/sdk/cit" },
       { text: "📦 How to use", link: "/sdk/how-to-use" },
       { text: "⚙️ CI/CD", link: "/sdk/how-to-use" },
@@ -89,7 +92,7 @@ const sidebars = {
 
 export default defineConfig({
   lang: "en-US",
-  title: "Hono",
+  title: "FABS",
   description:
     "Ultrafast web framework for Cloudflare Workers, Fastly Compute@Edge, Deno, Bun, Vercel, Lagon, Node.js, and others. Fast, but not only fast.",
   lastUpdated: true,
@@ -155,5 +158,5 @@ export default defineConfig({
     ["meta", { property: "twitter:card", content: "summary_large_image" }],
     ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
   ],
-  titleTemplate: ":title - Hono",
+  titleTemplate: ":title - FABS",
 });
