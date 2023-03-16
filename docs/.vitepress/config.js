@@ -26,13 +26,14 @@ const sidebars = {
 			{ text: '🏭 Data Builder', link: '/sdk/data-builder' },
 			{
 				text: '💰 Statement Of Financial Position',
-				link: '/sdk/statement-of-finacial',
+				link: '/sdk/sof',
 			},
 			{
 				text: '🥸 Statement of Changes in Equity',
-				link: '/sdk/statement-of-changes-in-equity',
+				link: '/sdk/soc',
 			},
-			{ text: '🧩 Remark', link: '/sdk/remark' },
+			{ text: '🧩 Remark Row Generator', link: '/sdk/remark' },
+			{ text: '🎯 Remark Template', link: '/sdk/remark' },
 			{ text: '🧮 Corporate Income Tax', link: '/sdk/cit' },
 			{ text: '📦 How to use', link: '/sdk/how-to-use' },
 			{ text: '⚙️ CI/CD', link: '/sdk/how-to-use' },
