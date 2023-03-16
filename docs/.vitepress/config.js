@@ -30,7 +30,7 @@ const sidebars = {
 			},
 			{
 				text: '🥸 Statement of Changes in Equity',
-				link: '/sdk/statement-of-changes-in-equity',
+				link: '/sdk/soc',
 			},
 			{ text: '🧩 Remark Row Generator', link: '/sdk/remark' },
 			{ text: '🎯 Remark Template', link: '/sdk/remark' },
