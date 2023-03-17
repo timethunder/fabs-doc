@@ -95,8 +95,7 @@ const sidebars = {
 export default defineConfig({
 	lang: 'en-US',
 	title: 'FABS',
-	description:
-		'Ultrafast web framework for Cloudflare Workers, Fastly Compute@Edge, Deno, Bun, Vercel, Lagon, Node.js, and others. Fast, but not only fast.',
+	description: 'Fastastic Auto Balance Sheet',
 	lastUpdated: true,
 	cleanUrls: 'with-subfolders',
 	markdown: {
@@ -124,33 +123,13 @@ export default defineConfig({
 			text: 'Edit this page on GitHub',
 		},
 		footer: {
-			message: 'Released under the MIT License.',
-			copyright: 'Copyright © 2022-present Yusuke Wada & Hono contributors',
+			copyright: 'Copyright © 2022-present Timethunder Co., Ltd.',
 		},
 		sidebar: {
 			'/': [sidebars['sdk'], sidebars['web'], sidebars['backoffice'], sidebars['api'], sidebars['database']],
 		},
 	},
 	plugins: [['@vite/vuepress-plugin-mathjax']],
-	head: [
-		[
-			'meta',
-			{
-				property: 'og:image',
-				content: 'https://hono.dev/images/hono-title.png',
-			},
-		],
-		['meta', { property: 'og:type', content: 'website' }],
-		['meta', { property: 'twitter:domain', content: 'hono.dev' }],
-		[
-			'meta',
-			{
-				property: 'twitter:image',
-				content: 'https://hono.dev/images/hono-title.png',
-			},
-		],
-		['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-		['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
-	],
+	head: [['link', { rel: 'shortcut icon', href: '/favicon.ico' }]],
 	titleTemplate: ':title - FABS',
 })
