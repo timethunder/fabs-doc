@@ -32,11 +32,8 @@ const sidebars = {
 				text: '🥸 Statement of Changes in Equity',
 				link: '/sdk/soc',
 			},
-			{ text: '🧩 Remark Row Generator', link: '/sdk/remark' },
-			{ text: '🎯 Remark Template', link: '/sdk/remark' },
+			{ text: '🧩 Remark Row Generator', link: '/sdk/remark-row-gen' },
 			{ text: '🧮 Corporate Income Tax', link: '/sdk/cit' },
-			{ text: '📦 How to use', link: '/sdk/how-to-use' },
-			{ text: '⚙️ CI/CD', link: '/sdk/how-to-use' },
 		],
 	},
 	web: {
