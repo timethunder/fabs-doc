@@ -13,7 +13,7 @@ POST api/auth/login
 }
 ```
 
-Resposne
+Response
 
 ```ts
 {
@@ -36,7 +36,7 @@ POST api/auth/register
 	agreements: boolean,
 }
 ```
-Resposne
+Response
 ```ts
 {
 	uuid: string,
@@ -57,7 +57,7 @@ Request
 // src/auth/auth.controller.ts#sendEmailForgotPassword
 GET api/auth/forgot-password/{email}
 ```
-Resposne
+Response
 ```ts
 {
 	success: boolean,
@@ -77,7 +77,7 @@ POST api/auth/reset-password
  	currentPassword: string
 }
 ```
-Resposne
+Response
 ```ts
 {
 	success: boolean,
@@ -91,7 +91,7 @@ Request
 // src/auth/auth.controller.ts#verifyEmail
 GET api/auth/verify/{token}
 ```
-Resposne
+Response
 ```ts
 {
 	success: boolean,
@@ -105,7 +105,7 @@ Request
 // src/auth/auth.controller.ts#sendEmailVerification
 GET api/auth/resend-verification/{email}
 ```
-Resposne
+Response
 ```ts
 {
 	success: boolean,

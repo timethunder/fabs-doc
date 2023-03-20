@@ -30,7 +30,7 @@ POST api/projects
 	packageId: number
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number
@@ -55,7 +55,7 @@ Request
 // src/projects/projects.controller.ts#findAll
 GET api/projects
 ```
-Resposne
+Response
 ```ts
 [
 	{
@@ -83,7 +83,7 @@ Request
 // src/projects/projects.controller.ts#findOne
 GET api/projects/{id}
 ```
-Resposne
+Response
 ```ts
 {
 	id: number
@@ -130,7 +130,7 @@ PATCH api/projects/{id}
 	packageId: number
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number
@@ -156,7 +156,7 @@ Request
 // src/projects/projects.controller.ts#remove
 DELETE api/workspace/{id}
 ```
-Resposne
+Response
 ```ts
 null
 ```

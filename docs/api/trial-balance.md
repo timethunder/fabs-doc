@@ -22,7 +22,7 @@ POST api/trialBalances
 	remarkConfigs: JSON;
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number;
@@ -48,7 +48,7 @@ Request
 // src/trial-balances/trial-balances.controller.ts#findAll
 GET api/trialBalances
 ```
-Resposne
+Response
 ```ts
 [
 	{
@@ -77,7 +77,7 @@ Request
 // src/trial-balances/trial-balances.controller.ts#findOne
 GET api/trialBalances/{id}
 ```
-Resposne
+Response
 ```ts
 {
 	id: number;
@@ -116,7 +116,7 @@ PATCH api/trialBalances/{id}
 	remarkConfigs: JSON;
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number;
@@ -145,7 +145,7 @@ PUT api/trialBalances/{id}/trialBalanceRecords
 	records: JSON;
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number;
@@ -174,7 +174,7 @@ PUT api/trialBalances/{id}/trialBalanceRemarkConfigs
 	remarkConfigs: JSON;
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number;
@@ -200,7 +200,7 @@ Request
 // src/trial-balances/trial-balances.controller.ts#remove
 DELETE api/trialBalances/{id}
 ```
-Resposne
+Response
 ```ts
 null
 ```

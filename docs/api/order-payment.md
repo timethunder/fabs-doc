@@ -18,7 +18,7 @@ POST api/orders/create
 	slipBase64: string;
 }
 ```
-Resposne
+Response
 ```ts
 {
 	orderPackages: [
@@ -67,7 +67,7 @@ Request
 // src/orders/orders.controller.ts#history
 GET api/orders/history
 ```
-Resposne
+Response
 ```ts
 [
 	{
@@ -103,7 +103,7 @@ POST api/backoffice/orders/confirm
 	orderUuid: string;
 }
 ```
-Resposne
+Response
 ```ts
 // void
 ```
@@ -118,7 +118,7 @@ POST api/backoffice/orders/cancel
 	orderUuid: string;
 }
 ```
-Resposne
+Response
 ```ts
 // void
 ```

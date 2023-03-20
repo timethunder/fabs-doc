@@ -13,7 +13,7 @@ POST api/workspaces
 	name: string
 }
 ```
-Resposne
+Response
 ```ts
 {
 	id: number,
@@ -30,7 +30,7 @@ Request
 // src/workspaces/workspaces.controller.ts#findAll
 GET api/workspaces
 ```
-Resposne
+Response
 ```ts
 [
 	{
@@ -50,7 +50,7 @@ Request
 // src/workspaces/workspaces.controller.ts#findOne
 GET api/workspace/{id}
 ```
-Resposne
+Response
 ```ts
 {
 	id: number,
@@ -67,7 +67,7 @@ Request
 // src/workspaces/workspaces.controller.ts#update
 PATCH api/workspace/{id}
 ```
-Resposne
+Response
 ```ts
 {
 	id: number,
@@ -84,7 +84,7 @@ Request
 // src/workspaces/workspaces.controller.ts#remove
 DELETE api/workspace/{id}
 ```
-Resposne
+Response
 ```ts
 null
 ```
