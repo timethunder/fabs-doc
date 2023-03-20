@@ -4,15 +4,6 @@ import { defineConfig } from 'vitepress'
 const customElements = ['mjx-container']
 
 const sidebars = {
-	concepts: {
-		text: 'Concepts',
-		collapsed: true,
-		items: [
-			{ text: 'Philosophy', link: '/concepts/philosophy' },
-			{ text: 'Benchmarks', link: '/concepts/benchmarks' },
-			{ text: 'Hono Stacks', link: '/concepts/stacks' },
-		],
-	},
 	sdk: {
 		text: 'FABS-SDK',
 		collapsed: false,
@@ -37,25 +28,6 @@ const sidebars = {
 			{ text: '🧮 Corporate Income Tax', link: '/sdk/cit' },
 			{ text: '📦 How to use', link: '/sdk/how-to-use' },
 			{ text: '⚙️ CI/CD', link: '/sdk/how-to-use' },
-		],
-	},
-	web: {
-		text: 'FABS-WEB',
-		collapsed: true,
-		items: [
-			{ text: 'App', link: '/api/hono' },
-			{ text: 'Routing', link: '/api/routing' },
-			{ text: 'Context', link: '/api/context' },
-			{ text: 'HonoRequest', link: '/api/request' },
-			{ text: 'Exception', link: '/api/exception' },
-		],
-	},
-	backoffice: {
-		text: 'FABS-BACKOFFICE',
-		collapsed: true,
-		items: [
-			{ text: 'User', link: '/api/hono' },
-			{ text: 'Order', link: '/api/routing' },
 		],
 	},
 	api: {
@@ -127,7 +99,7 @@ export default defineConfig({
 			copyright: 'Copyright © 2022-present Timethunder Co., Ltd.',
 		},
 		sidebar: {
-			'/': [sidebars['sdk'], sidebars['web'], sidebars['backoffice'], sidebars['api'], sidebars['database']],
+			'/': [sidebars['sdk'], sidebars['api'], sidebars['database']],
 		},
 	},
 	plugins: [['@vite/vuepress-plugin-mathjax']],
