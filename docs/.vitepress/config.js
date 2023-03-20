@@ -62,11 +62,12 @@ const sidebars = {
 		text: 'FABS-API',
 		collapsed: true,
 		items: [
-			{ text: 'App', link: '/api/hono' },
-			{ text: 'Routing', link: '/api/routing' },
-			{ text: 'Context', link: '/api/context' },
-			{ text: 'HonoRequest', link: '/api/request' },
-			{ text: 'Exception', link: '/api/exception' },
+			{ text: '👀 Overview', link: '/api/overview' },
+			{ text: '🔐 Authentication', link: '/api/authentication' },
+			{ text: '🏢 Workspace', link: '/api/workspace' },
+			{ text: '📂 Project', link: '/api/project' },
+			{ text: '📊 TrialBalance', link: '/api/trial-balance' },
+			{ text: '📦 Order & Payment', link: '/api/order-payment' },
 		],
 	},
 	database: {
