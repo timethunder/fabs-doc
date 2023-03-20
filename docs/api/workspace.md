@@ -1,18 +1,90 @@
 # 🏢 Workspace
 
-## CRUD
+## Prerequisites
+* Request headers
+	* `Authorization: Bearer {access_token}`
+
+## Create new workspace
 Request
 ```ts
-// src/auth/auth.controller.ts#login
-POST api/auth/login
+// src/workspaces/workspaces.controller.ts#create
+POST api/workspaces
 {
-	"email": string,
-	"password": string
+	name: string
 }
 ```
 Resposne
 ```ts
 {
-	"access_token": string
+	id: number,
+	uuid: string,
+	name: string,
+	createdAt: date,
+	updatedAt: date,
 }
+```
+
+## Get workspace list
+Request
+```ts
+// src/workspaces/workspaces.controller.ts#findAll
+GET api/workspaces
+```
+Resposne
+```ts
+[
+	{
+		id: number,
+		uuid: string,
+		name: string,
+		createdAt: date,
+		updatedAt: date,
+	},
+	...
+]
+```
+
+## Get workspace by ID
+Request
+```ts
+// src/workspaces/workspaces.controller.ts#findOne
+GET api/workspace/{id}
+```
+Resposne
+```ts
+{
+	id: number,
+	uuid: string,
+	name: string,
+	createdAt: date,
+	updatedAt: date,
+}
+```
+
+## Update workspace by ID
+Request
+```ts
+// src/workspaces/workspaces.controller.ts#update
+PATCH api/workspace/{id}
+```
+Resposne
+```ts
+{
+	id: number,
+	uuid: string,
+	name: string,
+	createdAt: date,
+	updatedAt: date,
+}
+```
+
+## Delete workspace by ID
+Request
+```ts
+// src/workspaces/workspaces.controller.ts#remove
+DELETE api/workspace/{id}
+```
+Resposne
+```ts
+null
 ```

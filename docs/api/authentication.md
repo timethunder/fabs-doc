@@ -8,8 +8,8 @@ Request
 // src/auth/auth.controller.ts#login
 POST api/auth/login
 {
-	"email": string,
-	"password": string
+	email: string,
+	password: string
 }
 ```
 
@@ -17,7 +17,7 @@ Resposne
 
 ```ts
 {
-	"access_token": string
+	access_token: string
 }
 ```
 
@@ -28,26 +28,26 @@ Request
 // src/auth/auth.controller.ts#register
 POST api/auth/register
 {
-	"firstName": string,
-	"lastName": string,
-	"email": string,
-	"password": string,
-	"company": string,
-	"agreements": boolean,
+	firstName: string,
+	lastName: string,
+	email: string,
+	password: string,
+	company: string,
+	agreements: boolean,
 }
 ```
 Resposne
 ```ts
 {
-	"uuid": string,
-	"firstName": string,
-	"lastName": string,
-	"email": string,
-	"id": number,
-	"isValidateEmail": boolean,
-	"createdAt": date,
-	"updatedAt": date,
-	"role": string
+	uuid: string,
+	firstName: string,
+	lastName: string,
+	email: string,
+	id: number,
+	isValidateEmail: boolean,
+	createdAt: date,
+	updatedAt: date,
+	role: string
 }
 ```
 
@@ -55,13 +55,13 @@ Resposne
 Request
 ```ts
 // src/auth/auth.controller.ts#sendEmailForgotPassword
-GET api/auth/forgot-password/:email
+GET api/auth/forgot-password/{email}
 ```
 Resposne
 ```ts
 {
-	"success": boolean,
-	"message": string,
+	success: boolean,
+	message: string,
 }
 ```
 
@@ -71,17 +71,17 @@ Request
 // src/auth/auth.controller.ts#setNewPassord
 POST api/auth/reset-password
 {
-	"email": string,
-	"newPassword": string,
-	"newPasswordToken": string,
- 	"currentPassword": string
+	email: string,
+	newPassword: string,
+	newPasswordToken: string,
+ 	currentPassword: string
 }
 ```
 Resposne
 ```ts
 {
-	"success": boolean,
-	"message": string,
+	success: boolean,
+	message: string,
 }
 ```
 
@@ -89,13 +89,13 @@ Resposne
 Request
 ```ts
 // src/auth/auth.controller.ts#verifyEmail
-GET api/auth/verify/:token
+GET api/auth/verify/{token}
 ```
 Resposne
 ```ts
 {
-	"success": boolean,
-	"message": string,
+	success: boolean,
+	message: string,
 }
 ```
 
@@ -103,12 +103,12 @@ Resposne
 Request
 ```ts
 // src/auth/auth.controller.ts#sendEmailVerification
-GET api/auth/resend-verification/:email
+GET api/auth/resend-verification/{email}
 ```
 Resposne
 ```ts
 {
-	"success": boolean,
-	"message": string,
+	success: boolean,
+	message: string,
 }
 ```

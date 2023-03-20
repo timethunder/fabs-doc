@@ -6,7 +6,7 @@
 WEB/BACKOFFICE <<<  API  >>> DATABASE
 ```
 
-ซึ่งสามารถแบ่งส่วนเป็นหมวดได้ดังนี้
+ซึ่งสามารถแบ่งส่วนหลักๆเป็นหมวดได้ดังนี้
 
 ```
 ├── Authentication
@@ -23,5 +23,6 @@ WEB/BACKOFFICE <<<  API  >>> DATABASE
 └── Order & Payment
 ```
 
+หรือสามารถดู API Docs by Swagger ทั้งหมดได้ที่ [FABS-API](https://github.com/timethunder/fabs-api/) โดยทำการรัน local และเข้าไปยัง http://localhost:3000/api
 
 Exam: https://github.com/zxol/airbnbapi
